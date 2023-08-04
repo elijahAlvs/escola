@@ -5,8 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess The Number</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    
+    <script src="assets/js/script.js"></script>
+    <main>
+        <div id="esq">
+            <h2>COMO JOGAR?</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolorem necessitatibus at, repellat ad unde earum beatae aut praesentium odio minima tempore error ipsum assumenda aliquid officiis numquam corporis eligendi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum maxime modi, neque aut cupiditate, corrupti pariatur distinctio deleniti enim est repellat veritatis eos placeat sunt eum, aspernatur voluptatem. Accusamus, voluptatum.</p>
+        </div>
+
+        <div id="divMain">
+            <picture>
+                <img src="assets/images/logo/second-logo.png" alt="Logo GuessTheNumber">
+            </picture>
+            <label for="iguess"><h2>DIGITE SEU NÚMERO</h2></label>
+            <input type="number" name="nguess" id="iguess" required placeholder="Escreva um n° de 1 a 100">
+            <button onclick="numRandom();">Adivinhar</button>
+        </div>
+
+        <div id="dir">
+            <h2>HISTÓRICO</h2>
+            <hr>
+            <div id="dirHistorico">
+
+            </div>
+        </div>
+    </main>
 </body>
 </html>

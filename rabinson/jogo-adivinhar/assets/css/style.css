@@ -4,7 +4,98 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
-    background-image: linear-gradient(45deg, yellow, purple);
+    background-image: linear-gradient(to top, rgb(2, 2, 91), rgb(8, 8, 49));
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-attachment: fixed;
+}
+main{
+    width: 85vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+}
+/*COMEÇO DIV ESQUERDA-----------------------------------------*/
+main > div#esq{
+    width: 300px;
+    height: 750px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+    background-image: linear-gradient(to top, purple, black);
+    box-shadow: 1px 1px 13px rgba(0, 0, 0, 0.774);
+}
+main > div#esq > p{
+    text-align: justify;
+    padding: 15px 0;
+}
+main > div#esq > h2{
+    padding: 0 0 10px 0;
+}
+/*FIM DIV ESQUERDA--------------------------------------------*/
+
+/*COMEÇO DIV DIREITA*/
+main > div#dir{
+    width: 300px;
+    height: 750px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+    background-image: linear-gradient(to top, purple, black);
+    box-shadow: 1px 1px 13px rgba(0, 0, 0, 0.774);
+}
+
+main > div#divMain{
+    width: 700px;
+    height: 750px;
+    border-radius: 15px;
+    padding: 20px;
+    background-image: linear-gradient(to top, purple, black);
+    box-shadow: 1px 1px 13px rgba(0, 0, 0, 0.774);
+}
+main > div#dir > h2{
+    padding: 0 0 10px 0;
+}
+div#dir > div#dirHistorico{
+    margin: auto;
+    padding: 15px 0;
+}
+/*FIM DIV DIREITA*/
+picture > img{
+    display: block;
+    margin: auto;
+    padding: 0 0 120px 0;
+}
+label{
+    display: block;
+    padding: 0 0 30px 0;
+}
+input{
+    display: block;
+    margin: auto;
+    width: 430px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+button{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 35px;
+    box-shadow: 1px 1px 15px #141414;
+    font-size: 20px;
+    font-weight: bold;
 }
