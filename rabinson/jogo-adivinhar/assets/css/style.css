@@ -7,7 +7,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
-    background-image: linear-gradient(to top, rgb(2, 2, 91), rgb(8, 8, 49));
+    background-image: linear-gradient(to bottom, #A0CCDA, #FFD3E8);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -21,7 +21,7 @@ main{
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    color: whitesmoke;
+    color: rgb(254, 250, 243);
 }
 /*COMEÇO DIV ESQUERDA-----------------------------------------*/
 main > div#esq{
@@ -30,8 +30,8 @@ main > div#esq{
     background-color: whitesmoke;
     border-radius: 10px;
     padding: 20px;
-    background-image: linear-gradient(to top, purple, black);
-    box-shadow: 1px 1px 13px rgba(0, 0, 0, 0.774);
+    background-color: #407c9fe8;
+    box-shadow: 1px 1px 4px 2px#78747492;
 }
 main > div#esq > p{
     text-align: justify;
@@ -49,8 +49,8 @@ main > div#dir{
     background-color: whitesmoke;
     border-radius: 10px;
     padding: 20px;
-    background-image: linear-gradient(to top, purple, black);
-    box-shadow: 1px 1px 13px rgba(0, 0, 0, 0.774);
+    background-color: #407c9fe8;
+    box-shadow: 1px 1px 4px 2px#78747492;
 }
 
 main > div#divMain{
@@ -58,8 +58,8 @@ main > div#divMain{
     height: 750px;
     border-radius: 15px;
     padding: 20px;
-    background-image: linear-gradient(to top, purple, black);
-    box-shadow: 1px 1px 13px rgba(0, 0, 0, 0.774);
+    background-color: #407c9fe8;
+    box-shadow: 1px 1px 4px 3px#78747492;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,7 +98,8 @@ button{
     border: none;
     border-radius: 10px;
     padding: 15px 35px;
-    box-shadow: 1px 1px 15px #141414;
+    box-shadow: 1px 1px 10px 5px;
     font-size: 20px;
     font-weight: bold;
+    color: #24648ae8;
 }
