@@ -74,6 +74,9 @@ main > div#dir > h2{
 div#dir > div#dirHistorico{
     margin: auto;
     padding: 15px 0;
+    overflow-y: scroll;
+    text-align: justify;
+    text-indent: 5px;
 }
 /*FIM DIV DIREITA*/
 picture > img{

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Estilos CSS para o histórico */
+  #historico {
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: scroll;
+  }
+</style>
+</head>
+<body>
+
+<input type="number" id="tentativa">
+<button onclick="verificarTentativa()">Verificar</button>
+
+<div id="historico">
+  <p><strong>Histórico de Tentativas:</strong></p>
+</div>
+
+
+
+
+<script>
+  // Número aleatório gerado pelo computador
+  const numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+
+  // Função para verificar a tentativa do usuário
+  function verificarTentativa() {
+    const input = document.getElementById('tentativa');
+    const tentativa = parseInt(input.value);
+
+    // Verificar se a tentativa está correta
+    if (tentativa === numeroAleatorio) {
+      adicionarAoHistorico(`Tentativa ${tentativa}: Acertou!`);
+      alert('Parabéns! Você acertou o número.');
+    } else {
+      adicionarAoHistorico(`Tentativa ${tentativa}: Errou!`);
+      alert('Tente novamente.');
+    }
+
+    input.value = '';
+  }
+
+  // Função para adicionar uma entrada ao histórico
+  function adicionarAoHistorico(texto) {
+    const historico = document.getElementById('dirHistorico');
+    const novaEntrada = document.createElement('p');
+    novaEntrada.textContent = texto;
+    historico.appendChild(novaEntrada);
+  }
+</script>
+
+</body>
+</html>
