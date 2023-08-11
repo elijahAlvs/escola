@@ -30,8 +30,8 @@ main > div#esq{
     background-color: whitesmoke;
     border-radius: 10px;
     padding: 20px;
-    background-color: #407c9fe8;
-    box-shadow: 1px 1px 4px 2px#78747492;
+    background-color: rgba(0, 0, 0, 0.249);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.249);
     text-indent: 5px;
 }
 main > div#esq > p{
@@ -53,8 +53,8 @@ main > div#dir{
     background-color: whitesmoke;
     border-radius: 10px;
     padding: 20px;
-    background-color: #407c9fe8;
-    box-shadow: 1px 1px 4px 2px#78747492;
+    background-color: rgba(0, 0, 0, 0.249);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.249);
 }
 
 main > div#divMain{
@@ -62,8 +62,8 @@ main > div#divMain{
     height: 750px;
     border-radius: 15px;
     padding: 20px;
-    background-color: #407c9fe8;
-    box-shadow: 1px 1px 4px 3px#78747492;
+    background-color: rgba(0, 0, 0, 0.249);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.249);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,5 +112,6 @@ button{
     box-shadow: 1px 1px 10px 5px;
     font-size: 20px;
     font-weight: bold;
-    color: #24648ae8;
+    color: rgba(0, 0, 0, 0.627);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.249);
 }

@@ -1,6 +1,6 @@
 // Número aleatório gerado pelo computador
 const numeroAleatorio = Math.floor(Math.random() * 100) + 1;
-
+console.log(numeroAleatorio);
 // Função para verificar a tentativa do usuário
 function verificarTentativa() {
   const input = document.getElementById('iguess');
@@ -8,10 +8,10 @@ function verificarTentativa() {
 
   // Verificar se a tentativa está correta
   if (tentativa === numeroAleatorio) {
-    adicionarAoHistorico(`Número ${tentativa} | Acertou!`);
+    adicionarAoHistorico(`Número ${tentativa} | Acertou! ✅`);
     alert('Parabéns! Você acertou o número.');
   } else {
-    adicionarAoHistorico(`Número: ${tentativa} | Errou!`);
+    adicionarAoHistorico(`Número: ${tentativa} | Errou! 🚨`);
     alert('Tente novamente.');
   }
 
