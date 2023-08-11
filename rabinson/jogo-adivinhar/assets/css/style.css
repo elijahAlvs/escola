@@ -32,6 +32,7 @@ main > div#esq{
     padding: 20px;
     background-color: #407c9fe8;
     box-shadow: 1px 1px 4px 2px#78747492;
+    text-indent: 5px;
 }
 main > div#esq > p{
     text-align: justify;
@@ -39,6 +40,9 @@ main > div#esq > p{
 }
 main > div#esq > h2{
     padding: 0 0 10px 0;
+}
+main > div#esq > p{
+    font-size: 18px;
 }
 /*FIM DIV ESQUERDA--------------------------------------------*/
 
@@ -74,9 +78,13 @@ main > div#dir > h2{
 div#dir > div#dirHistorico{
     margin: auto;
     padding: 15px 0;
-    overflow-y: scroll;
+    overflow-y: hidden;
     text-align: justify;
     text-indent: 5px;
+    line-height: 1.4em;
+}
+div#dirHistorico{
+    font-size: 18px;
 }
 /*FIM DIV DIREITA*/
 picture > img{
