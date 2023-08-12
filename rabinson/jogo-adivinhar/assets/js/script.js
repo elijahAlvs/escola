@@ -1,25 +1,52 @@
-// Número aleatório gerado pelo computador
-const numeroAleatorio = Math.floor(Math.random() * 100) + 1;
-console.log(numeroAleatorio);
-// Função para verificar a tentativa do usuário
-function verificarTentativa() {
-  const input = document.getElementById('iguess');
-  const tentativa = parseInt(input.value);
+var numeroGerado = 0;
+    var attempts = 0;
 
-  // Verificar se a tentativa está correta
-  if (tentativa === numeroAleatorio) {
-    adicionarAoHistorico(`Número ${tentativa} | Acertou! ✅`);
-    alert('Parabéns! Você acertou o número.');
-  } else {
-    adicionarAoHistorico(`Número: ${tentativa} | Errou! 🚨`);
-    alert('Tente novamente.');
-  }
+    function refresh(){
+        var element = document.getElementById('iguess');
 
-  // Limpar o campo de tentativa
-  input.value = '';
-}
+        numeroGerado = parseInt(Math.random() * 100);
+        attempts = 0;
 
-// Função para adicionar uma entrada ao histórico
+        console.log('The number to find: '+ numeroGerado);
+    }
+    refresh();
+
+    function verifyNumber(){
+      var element = document.getElementById('iguess');
+      var bet = element.value;
+
+        if(bet > 100 || bet < 0)
+        {
+            alert('Aposta é inválida');
+            element.value = "";
+            return;
+        }
+
+        if(bet > numeroGerado)
+        {
+            attempts++;
+            adicionarAoHistorico(`${attempts}: Número: ${bet} | Errou! 🚨`);
+            alert('🚨MENOR🚨');
+            element.value = "";
+        }
+        else if(bet < numeroGerado)
+        {
+            attempts++;
+            adicionarAoHistorico(`${attempts}: Número: ${bet} | Errou! 🚨`);
+            alert('🚨MAIOR🚨');
+            element.value = "";
+        }
+        else
+        {
+          
+          attempts++;
+          adicionarAoHistorico(`${attempts}: Número ${bet} | Acertou! ✅`);
+            alert('✅ Parabéns você acertou! ✅');
+            refresh();
+            element.value = "";
+        }
+    }
+
 function adicionarAoHistorico(texto) {
   const historico = document.getElementById('dirHistorico');
   const novaEntrada = document.createElement('p');
