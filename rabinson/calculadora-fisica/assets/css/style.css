@@ -9,8 +9,9 @@
 header{
     position: sticky;
     top: 0;
-    max-width: 100vw;
-    background-image: linear-gradient(to right, black, rgb(150, 150, 20));
+    width: 100vw;
+    background-color: #969614;
+    box-shadow: 0 1px 15px rgb(28, 28, 28);
 }
 header > img{
     width: 115px;
@@ -19,20 +20,26 @@ header > img{
 body{
     height: 100vh;
     width: 100vw;
-    background-color: #E5E1E1;
+    background-image: linear-gradient(45deg, #dedcde, #dedcde);
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 main{
     margin: auto;
-    width: 1400px;
+    width: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-left: 1px solid #c8c7c7;
     border-right: 1px solid #c8c7c7;
-    padding: 50px;
+    padding: 100px 300px 300px;
+    background-color: #e0dfdfec;
+}
+main > label{
+    font-weight: bold;
+    font-size: 40px;
+    padding: 0 0 60px 0;
 }
 main button{
     color:rgb(124, 124, 2);
@@ -44,6 +51,6 @@ main button{
     height: 68px;
     border: 1px solid gray;
     border-radius: 10px;
-    margin:3px;
+    margin:3px 0;
     box-shadow: 1px 1px 1px rgb(166, 166, 166);
 }
